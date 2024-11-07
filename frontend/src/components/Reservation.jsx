@@ -4,6 +4,7 @@ import axios from "axios"
 import { useState } from "react"
 import toast from "react-hot-toast"
 import { useNavigate } from "react-router-dom"
+import "./styles/reservation.css"
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("")

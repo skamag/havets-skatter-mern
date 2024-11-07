@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { HiOutlineArrowRight } from "react-icons/hi";
+import React from "react"
+import { Link } from "react-router-dom"
+import { HiOutlineArrowRight } from "react-icons/hi"
+import "./styles/about.css"
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -1,5 +1,6 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React from "react"
+import Navbar from "./Navbar"
+import "./styles/heroSection.css"
 
 const HeroSection = () => {
   return (
@@ -32,7 +33,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

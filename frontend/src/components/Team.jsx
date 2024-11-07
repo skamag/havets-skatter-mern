@@ -1,5 +1,7 @@
-import React from "react";
-import { data } from "../restApi.json";
+import React from "react"
+import { data } from "../restApi.json"
+import "./styles/team.css"
+
 const Team = () => {
   return (
     <section className="team" id="team">
@@ -20,12 +22,12 @@ const Team = () => {
                 <h3>{element.name}</h3>
                 <p>{element.designation}</p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Team;
+export default Team
