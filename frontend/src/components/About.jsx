@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { HiOutlineArrowRight } from "react-icons/hi"
 import "./styles/about.css"
 
 const About = () => {
@@ -10,8 +9,8 @@ const About = () => {
         <div className="container">
           <div className="banner">
             <div className="top">
-              <h1 className="heading">ABOUT US</h1>
-              <p>The only thing we're serious about is food.</p>
+              <h1 className="heading">OM OSS</h1>
+              <p>Nyt mat og utsikt fra vår idylliske restaurant.</p>
             </div>
             <p className="mid">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -22,15 +21,10 @@ const About = () => {
               iusto ipsum qui dolore ex, accusantium repellat mollitia
               repellendus.
             </p>
-            <Link to={"/"}>
-              Explore Menu{" "}
-              <span>
-                <HiOutlineArrowRight />
-              </span>
-            </Link>
+            <Link to={"/"}>Utforsk meny </Link>
           </div>
           <div className="banner">
-            <img src="about.png" alt="about" />
+            <img src="seafood-plate.png" alt="about" />
           </div>
         </div>
       </section>

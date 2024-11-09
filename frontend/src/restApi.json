@@ -23,52 +23,28 @@
       ],
       "dishes": [
         {
-          "id": 1,
-          "image": "./dinner1.jpeg",
-          "title": "ROASTED LAMB RUMP",
-          "category": "Dinner"
-        },
-        {
           "id": 2,
           "image": "./dinner2.png",
-          "title": "CITRUS CURED SALMON",
-          "category": "Dinner"
+          "title": "SITRUSSPEKET LAKS",
+          "category": "Middag"
         },
         {
           "id": 3,
           "image": "./breakfast1.png",
-          "title": "PAN SEARED SEA BASS",
-          "category": "Breakfast"
-        },
-        {
-          "id": 4,
-          "image": "./dinner3.png",
-          "title": "STUFFED STRAWBERRY",
-          "category": "Dinner"
-        },
-        {
-          "id": 5,
-          "image": "./lunch1.png",
-          "title": "BEEF BURGER MEAL",
-          "category": "Lunch"
+          "title": "PANNESTEKT HAVABBOR",
+          "category": "Frokost"
         },
         {
           "id": 6,
           "image": "./dinner4.png",
-          "title": "MUSSELS SOUP",
-          "category": "Dinner"
-        },
-        {
-          "id": 7,
-          "image": "./dinner5.png",
-          "title": "ITALIAN SPAGHETTI",
-          "category": "Dinner"
+          "title": "MUSLINGSUPPE",
+          "category": "Middag"
         },
         {
           "id": 8,
           "image": "./dinner6.png",
-          "title": "GRILLED FISH",
-          "category": "Dinner"
+          "title": "GRILLET FISK",
+          "category": "Middag"
         }
       ],
       "team": [
@@ -76,25 +52,25 @@
           "id": 1,
           "image": "./team_member_1.png",
           "name": "JOHNATHAN TYLER",
-          "designation": "Founder & Head Chef"
+          "designation": "Grunnlegger og Kjøkkensjef"
         },
         {
           "id": 2,
           "image": "./team_member_2.png",
           "name": "WADE WARREN",
-          "designation": "Sous Chef"
+          "designation": "Soussjef"
         },
         {
           "id": 3,
           "image": "./team_member_3.png",
           "name": "JHON DOE",
-          "designation": "Fast Food Chef"
+          "designation": "Kokk"
         },
         {
           "id": 4,
           "image": "./team_member_4.png",
           "name": "ALEX COAL",
-          "designation": "Senior Chef"
+          "designation": "Kokk"
         }
       ],
       "testimonials": [
@@ -145,17 +121,17 @@
       "navbarLinks": [
         {
           "id": 1,
-          "title": "HOME",
+          "title": "HJEM",
           "link": "heroSection"
         },
         {
           "id": 2,
-          "title": "ABOUT US",
+          "title": "OM OSS",
           "link": "about"
         },
         {
           "id": 3,
-          "title": "SERVICES",
+          "title": "TJENESTER",
           "link": "qualities"
         },
         {
@@ -165,7 +141,7 @@
         },
         {
           "id": 5,
-          "title": "RESERVATION",
+          "title": "RESERVERING",
           "link": "reservation"
         }
       ]

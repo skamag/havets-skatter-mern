@@ -3,7 +3,7 @@ nav {
   max-width: 1500px;
   min-width: 1500px;
   padding: 25px 10px 40px 10px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   justify-content: space-between;
   position: relative;
   align-items: center;

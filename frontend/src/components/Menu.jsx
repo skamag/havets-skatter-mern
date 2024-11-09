@@ -8,7 +8,7 @@ const Menu = () => {
       <section className="menu" id="menu">
         <div className="container">
           <div className="heading_section">
-            <h1 className="heading">POPULAR DISHES</h1>
+            <h1 className="heading">POPULÆRE RETTER</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
               iusto dolorem! Voluptatibus ipsum nam mollitia architecto. Soluta
