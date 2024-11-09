@@ -21,6 +21,86 @@
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat."
         }
       ],
+      "menu": [
+        {
+          "id": 1,
+          "title": "Blåskjell i hvitvinssaus",
+          "description": "Dampede blåskjell i en kremet hvitvinssaus, servert med ferskt brød.",
+          "price": 129,
+          "allergies": ["bløtdyr", "melk", "hvete (gluten)"]
+        },
+        {
+          "id": 2,
+          "title": "Røkt laks på rugbrød",
+          "description": "Fersk røkt laks på sprøtt rugbrød, servert med dill, sitron og kapers.",
+          "price": 115,
+          "allergies": ["fisk", "hvete (gluten)"]
+        },
+        {
+          "id": 3,
+          "title": "Scampi med hvitløk og chili",
+          "description": "Grillet scampi i en blanding av hvitløk og chili, servert med lime og koriander.",
+          "price": 139,
+          "allergies": ["skalldyr"],
+          "category": "forrett"
+        },
+        {
+          "id": 4,
+          "title": "Grillet laks med urtesmør",
+          "description": "Saftig grillet laks servert med potetpuré, asparges og en smørsaus med friske urter.",
+          "price": 245,
+          "allergies": ["fisk", "melk"],
+          "category": "hovedrett"
+        },
+        {
+          "id": 5,
+          "title": "Hummer Thermidor",
+          "description": "Gratinerte hummerhaler med en kremet sopp- og sennepssaus, servert med grønnsaker og ris.",
+          "price": 379,
+          "allergies": ["skalldyr", "melk", "egg", "sennep"],
+          "category": "hovedrett"
+        },
+        {
+          "id": 6,
+          "title": "Stekt torsk med ertepuré",
+          "description": "Panert torsk servert med smørdampede grønnsaker, ertepuré og mandelpoteter.",
+          "price": 265,
+          "allergies": ["fisk", "melk", "hvete (gluten)"],
+          "category": "hovedrett"
+        },
+        {
+          "id": 7,
+          "title": "Fiskesuppe med safran",
+          "description": "Kremet fiskesuppe med fersk torsk, laks, blåskjell og safran, servert med brød.",
+          "price": 210,
+          "allergies": ["fisk", "melk", "bløtdyr", "hvete (gluten)"],
+          "category": "hovedrett"
+        },
+        {
+          "id": 8,
+          "title": "Sitronterte med marengs",
+          "description": "Syrlig sitronterte med sprø bunn og fløyelsmyk marengs.",
+          "price": 95,
+          "allergies": ["egg", "hvete (gluten)", "melk"],
+          "category": "dessert"
+        },
+        {
+          "id": 9,
+          "title": "Sjokolademousse med havsalt",
+          "description": "Fyldig sjokolademousse toppet med et hint av havsalt og friske bær.",
+          "price": 105,
+          "allergies": ["melk", "egg"],
+          "category": "dessert"
+        },
+        {
+          "id": 10,
+          "title": "Crème Brûlée med vanilje",
+          "description": "Klassisk crème brûlée med en knasende karamellisert topp og ekte vaniljesmak.",
+          "price": 115,
+          "allergies": ["egg", "melk"],
+          "category": "dessert"
+        }
+      ],
       "dishes": [
         {
           "id": 2,

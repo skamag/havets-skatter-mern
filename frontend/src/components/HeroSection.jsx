@@ -2,10 +2,10 @@ import React from "react"
 import Navbar from "./Navbar"
 import "./styles/heroSection.css"
 
-const HeroSection = () => {
+const HeroSection = ({ setShowMenu }) => {
   return (
     <section className="heroSection" id="heroSection">
-      <Navbar />
+      <Navbar setShowMenu={setShowMenu} />
       {/* <div className="container">
         <div class="logoContainer">
           <img className="logo" src="havets-skatter-logo.png" />

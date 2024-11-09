@@ -1,32 +1,27 @@
-import React from "react"
 import { data } from "../restApi.json"
 import "./styles/menu.css"
 
-const Menu = () => {
+const Menu = ({ showMenu }) => {
   return (
-    <>
-      <section className="menu" id="menu">
-        <div className="container">
-          <div className="heading_section">
-            <h1 className="heading">POPULÆRE RETTER</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              iusto dolorem! Voluptatibus ipsum nam mollitia architecto. Soluta
-              pariatur eius et recusandae veritatis. Quasi, et molestias!
-            </p>
+    <div className={`menuContainer ${showMenu ? "showMenu" : "hideMenu"}`}>
+      <h1 className="menuHeader">Meny</h1>
+      <div className="menu">
+        {data[0].menu.map((element) => (
+          <div className="card" key={element.id}>
+            <div className="cardImageContainer">
+              <img src={"/about-1.jpg"} alt={element.title} />
+            </div>
+            <div className="cardTextContainer">
+              <h3>{element.title}</h3>
+              <h5>{element.description}</h5>
+              <h5>
+                <b>{element.price}</b>
+              </h5>
+            </div>
           </div>
-          <div className="dishes_container">
-            {data[0].dishes.map((element) => (
-              <div className="card" key={element.id}>
-                <img src={element.image} alt={element.title} />
-                <h3>{element.title}</h3>
-                <button>{element.category}</button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </div>
   )
 }
 

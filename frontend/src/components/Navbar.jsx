@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 import { GiHamburgerMenu } from "react-icons/gi"
 import "./styles/navbar.css"
 
-const Navbar = () => {
+const Navbar = ({ setShowMenu }) => {
   const [show, setShow] = useState(false)
   return (
     <>
@@ -24,7 +24,9 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <button className="menuBtn">MENY</button>
+          <button className="menuBtn" onClick={() => setShowMenu(true)}>
+            MENY
+          </button>
         </div>
         <div className="hamburger" onClick={() => setShow(!show)}>
           <GiHamburgerMenu />
