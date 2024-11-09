@@ -14,12 +14,12 @@ const Home = () => {
 
   return (
     <>
-      <Menu showMenu={showMenu} />
+      <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
       <HeroSection setShowMenu={setShowMenu} />
       <About />
       {/* <Qualities /> */}
       <Dishes />
-      <WhoAreWe />
+      {/* <WhoAreWe /> */}
       <Team />
       <Reservation />
       <Footer />

@@ -130,26 +130,26 @@
       "team": [
         {
           "id": 1,
-          "image": "./team_member_1.png",
-          "name": "JOHNATHAN TYLER",
+          "image": "./team-member.png",
+          "name": "NAVN NAVNESEN",
           "designation": "Grunnlegger og Kjøkkensjef"
         },
         {
           "id": 2,
-          "image": "./team_member_2.png",
-          "name": "WADE WARREN",
+          "image": "./team-member.png",
+          "name": "NAVN NAVNESEN",
           "designation": "Soussjef"
         },
         {
           "id": 3,
-          "image": "./team_member_3.png",
-          "name": "JHON DOE",
+          "image": "./team-member.png",
+          "name": "NAVN NAVNESEN",
           "designation": "Kokk"
         },
         {
           "id": 4,
-          "image": "./team_member_4.png",
-          "name": "ALEX COAL",
+          "image": "./team-member.png",
+          "name": "NAVN NAVNESEN",
           "designation": "Kokk"
         }
       ],
@@ -179,23 +179,23 @@
       "who_we_are": [
         {
           "id": 1,
-          "number": "14",
-          "title": "Restaurants"
+          "number": "1",
+          "title": "Restaurant"
         },
         {
           "id": 2,
-          "number": "20",
-          "title": "Chef In Kitchen"
+          "number": "4",
+          "title": "Kokker"
         },
         {
           "id": 3,
-          "number": "08",
-          "title": "Years Of Experience"
+          "number": "63",
+          "title": "Års erfaring"
         },
         {
           "id": 4,
-          "number": "200",
-          "title": "Food Dishes"
+          "number": "10",
+          "title": "Matretter"
         }
       ],
       "navbarLinks": [

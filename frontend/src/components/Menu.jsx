@@ -1,10 +1,15 @@
 import { data } from "../restApi.json"
 import "./styles/menu.css"
 
-const Menu = ({ showMenu }) => {
+const Menu = ({ showMenu, setShowMenu }) => {
   return (
     <div className={`menuContainer ${showMenu ? "showMenu" : "hideMenu"}`}>
-      <h1 className="menuHeader">Meny</h1>
+      <div className="menuHeader">
+        <h1 className="menuTitle">Meny</h1>
+        <h1 onClick={() => setShowMenu(false)} className="menuX">
+          &#10006;
+        </h1>
+      </div>
       <div className="menu">
         {data[0].menu.map((element) => (
           <div className="card" key={element.id}>
@@ -15,7 +20,7 @@ const Menu = ({ showMenu }) => {
               <h3>{element.title}</h3>
               <h5>{element.description}</h5>
               <h5>
-                <b>{element.price}</b>
+                <b>{element.price} kr</b>
               </h5>
             </div>
           </div>
