@@ -19,7 +19,8 @@ const Team = () => {
             return (
               <div className="card" key={element.id}>
                 <img src={element.image} alt={element.name} />
-                <h3>{element.name}</h3>
+                <h3>FORNAVN ETTERNAVN</h3>
+                {/* <h3>{element.name}</h3> */}
                 <p>{element.designation}</p>
               </div>
             )

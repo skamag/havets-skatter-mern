@@ -9,6 +9,7 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  background-color: white;
 }
 nav::after {
   content: "";

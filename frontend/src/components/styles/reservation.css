@@ -2,8 +2,8 @@
   display: flex;
   min-height: 75vh;
   padding: 30px 20px;
-  justify-content: center;
   align-items: center;
+  background-color: #eee;
 }
 .reservation .container {
   display: flex;
@@ -17,23 +17,26 @@
 }
 .reservation .container .banner .mapContainer {
   height: 100%;
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .reservation .container .banner .mapContainer .map {
   display: flex;
   justify-content: center;
-  width: 60%;
 }
-.reservation .container .banner .mapContainer .map img {
+/* .reservation .container .banner .mapContainer .map img {
   border: 1px solid #333;
-}
+} */
 .reservation .container .banner .reservation_form_box {
   width: 400px;
-  background: #fff;
+  /* background: #fff; */
   /* height: 100%; */
   padding: 20px;
+  /* border: 1px solid #333; */
+  border-radius: 10px;
 }
 .reservation .container .banner .reservation_form_box form div {
   display: flex;
@@ -88,7 +91,7 @@
   form
   input[type="email"]:focus {
   outline: none;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid white;
 }
 .reservation
   .container

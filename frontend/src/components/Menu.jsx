@@ -2,6 +2,29 @@ import { data } from "../restApi.json"
 import "./styles/menu.css"
 
 const Menu = ({ showMenu, setShowMenu }) => {
+  // Helper function to render each category section
+  const renderCategory = (category, title) => (
+    <div className="menuSection">
+      <h1>{title}</h1>
+      {data[0].menu
+        .filter((element) => element.category.toString() === category)
+        .map((filteredElement) => (
+          <div className="card" key={filteredElement.id}>
+            <div className="cardImageContainer">
+              <img src={"/about-1.jpg"} alt={filteredElement.title} />
+            </div>
+            <div className="cardTextContainer">
+              <h3>{filteredElement.title}</h3>
+              <h5>{filteredElement.description}</h5>
+              <h5>
+                <b>{filteredElement.price} kr</b>
+              </h5>
+            </div>
+          </div>
+        ))}
+    </div>
+  )
+
   return (
     <div className={`menuContainer ${showMenu ? "showMenu" : "hideMenu"}`}>
       <div className="menuHeader">
@@ -11,20 +34,9 @@ const Menu = ({ showMenu, setShowMenu }) => {
         </h1>
       </div>
       <div className="menu">
-        {data[0].menu.map((element) => (
-          <div className="card" key={element.id}>
-            <div className="cardImageContainer">
-              <img src={"/about-1.jpg"} alt={element.title} />
-            </div>
-            <div className="cardTextContainer">
-              <h3>{element.title}</h3>
-              <h5>{element.description}</h5>
-              <h5>
-                <b>{element.price} kr</b>
-              </h5>
-            </div>
-          </div>
-        ))}
+        {renderCategory("forrett", "Forretter")}
+        {renderCategory("hovedrett", "Hovedretter")}
+        {renderCategory("dessert", "Desserter")}
       </div>
     </div>
   )

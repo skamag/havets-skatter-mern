@@ -13,17 +13,23 @@ const Home = () => {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <>
+    <div className="home">
       <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
       <HeroSection setShowMenu={setShowMenu} />
-      <About />
+
+      {!showMenu && (
+        <>
+          <About />
+          <Dishes />
+          <Reservation />
+          <Team />
+          <Footer />
+        </>
+      )}
+
       {/* <Qualities /> */}
-      <Dishes />
       {/* <WhoAreWe /> */}
-      <Team />
-      <Reservation />
-      <Footer />
-    </>
+    </div>
   )
 }
 

@@ -27,14 +27,16 @@
           "title": "Blåskjell i hvitvinssaus",
           "description": "Dampede blåskjell i en kremet hvitvinssaus, servert med ferskt brød.",
           "price": 129,
-          "allergies": ["bløtdyr", "melk", "hvete (gluten)"]
+          "allergies": ["bløtdyr", "melk", "hvete (gluten)"],
+          "category": "forrett"
         },
         {
           "id": 2,
           "title": "Røkt laks på rugbrød",
           "description": "Fersk røkt laks på sprøtt rugbrød, servert med dill, sitron og kapers.",
           "price": 115,
-          "allergies": ["fisk", "hvete (gluten)"]
+          "allergies": ["fisk", "hvete (gluten)"],
+          "category": "forrett"
         },
         {
           "id": 3,
@@ -209,10 +211,11 @@
           "title": "OM OSS",
           "link": "about"
         },
+
         {
-          "id": 3,
-          "title": "TJENESTER",
-          "link": "qualities"
+          "id": 5,
+          "title": "RESERVERING",
+          "link": "reservation"
         },
         {
           "id": 4,
@@ -220,9 +223,9 @@
           "link": "team"
         },
         {
-          "id": 5,
-          "title": "RESERVERING",
-          "link": "reservation"
+          "id": 3,
+          "title": "KONTAKT",
+          "link": "contact"
         }
       ]
     }
