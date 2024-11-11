@@ -18,17 +18,16 @@
 }
 .about .container .imageContainer {
   width: 50%;
-  background-color: pink;
   background-image: url("/rustic-seafood-restaurant.webp");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
-.about .container .banner img {
+/* .about .container .banner img {
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   overflow: hidden;
-}
+} */
 .heading {
   font-weight: 200;
   font-size: 4rem;

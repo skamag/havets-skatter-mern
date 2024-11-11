@@ -15,10 +15,18 @@ const Menu = ({ showMenu, setShowMenu }) => {
             </div>
             <div className="cardTextContainer">
               <h3>{filteredElement.title}</h3>
-              <h5>{filteredElement.description}</h5>
+              <p>{filteredElement.description}</p>
               <h5>
                 <b>{filteredElement.price} kr</b>
               </h5>
+              <>
+                <p>
+                  Allergener:
+                  {filteredElement.allergies.map((allergy) => (
+                    <span>{" " + allergy}</span>
+                  ))}
+                </p>
+              </>
             </div>
           </div>
         ))}
