@@ -117,6 +117,7 @@ nav svg {
     margin-right: 30px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
+    z-index: 50;
   }
   nav .showmenu .links {
     flex-direction: column;

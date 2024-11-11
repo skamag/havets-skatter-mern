@@ -43,16 +43,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  border-radius: 10px;
+  width: 20%;
+  overflow-x: hidden;
 }
 .menuContainer .cardImageContainer img {
-  height: 100%;
+  border-radius: 10px;
+  height: auto;
 }
 .menuContainer .cardTextContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 80%;
 }
 .showMenu {
   opacity: 1;
@@ -63,4 +65,19 @@
 .hideMenu {
   opacity: 0;
   /* transform: translateY(-250px); */
+}
+@media screen and (max-width: 900px) {
+  .menuContainer {
+    padding: 5% 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menuContainer {
+    padding: 5% 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menuContainer .cardImageContainer {
+    display: none;
+  }
 }

@@ -83,10 +83,10 @@
 }
 @media (max-width: 786px) {
   .about .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .about .container .banner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
   }
   .about .container .imageContainer {

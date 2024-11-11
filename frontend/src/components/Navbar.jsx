@@ -19,6 +19,7 @@ const Navbar = ({ setShowMenu }) => {
                 smooth={true}
                 duration={500}
                 key={element.id}
+                onClick={() => setShow(false)}
               >
                 {element.title}
               </Link>
