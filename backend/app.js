@@ -10,8 +10,8 @@ dotenv.config({ path: "./config/config.env" })
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["POST"],
+    origin: ["https://havets-skatter-mern-frontend.onrender.com"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 )
