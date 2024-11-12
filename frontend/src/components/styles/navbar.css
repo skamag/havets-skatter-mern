@@ -1,6 +1,5 @@
 nav {
   display: flex;
-  max-width: 1500px;
   min-width: 1500px;
   padding: 25px 10px 40px 10px;
   /* margin-bottom: 25px; */

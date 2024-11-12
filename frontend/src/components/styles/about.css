@@ -4,11 +4,16 @@
   justify-content: center;
   align-items: center;
   background-color: #eee;
+  padding: 30px 20px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about .container {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
+  min-width: fit-content;
 }
 .about .container .banner {
   display: flex;
@@ -63,14 +68,6 @@
   color: #fff;
   background: #111;
   transition: ease-in-out 0.3s;
-}
-@media (max-width: 1520px) {
-  .about {
-    padding: 30px 20px;
-  }
-  .about .container {
-    min-width: fit-content;
-  }
 }
 @media (max-width: 1050px) {
   .about .container .banner:first-child {
