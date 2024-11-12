@@ -9,7 +9,12 @@ const Navbar = ({ setShowMenu }) => {
   return (
     <>
       <nav>
-        <div className="logo">HAVETS SKATTER</div>
+        <div className="logo">
+          {/* <span className="logoImageContainer">
+            <img src="/icons8-fish-food-64.png" alt="logo"></img>
+          </span> */}
+          HAVETS SKATTER
+        </div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             {data[0].navbarLinks.map((element) => (

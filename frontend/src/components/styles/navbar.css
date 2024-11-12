@@ -24,7 +24,16 @@ nav .logo {
   flex: 1;
   display: flex;
   align-items: center;
+  gap: 10px;
   font-size: 2rem;
+}
+nav .logoImageContainer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+nav .logoImageContainer img {
+  height: 100%;
 }
 nav .navLinks {
   flex: 2;

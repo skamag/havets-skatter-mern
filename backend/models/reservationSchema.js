@@ -22,8 +22,8 @@ const reservationSchema = new mongoose.Schema({
   phone: {
     type: String,
     required: true,
-    minLength: [11, "Phone number must contain only 11 digits!"],
-    maxLength: [11, "Phone number must contain only 11 digits!"],
+    minLength: [8, "Phone number must contain at least 8 digits!"],
+    maxLength: [11, "Phone number cannot exceed 11 digits!"],
   },
   date: {
     type: String,
