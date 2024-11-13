@@ -63,7 +63,7 @@ nav .menuBtn {
   color: black;
   background: transparent;
   border: 1px solid #333;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 16px;
 }
 nav .menuBtn:hover {

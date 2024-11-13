@@ -47,7 +47,7 @@ const Reservation = () => {
         <div className="banner">
           <div className="mapContainer">
             <div className="map">
-              <img src="whoweare.png" alt="Kart" />
+              <img src="whoweare-v2.png" alt="Kart" />
               {/* <img src="tables-map-v2.png" alt="Kart" /> */}
             </div>
           </div>

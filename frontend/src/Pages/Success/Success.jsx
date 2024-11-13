@@ -21,8 +21,12 @@ const Success = () => {
     <>
       <section className="notFound">
         <div className="container">
-          <h1>Redirecting to Home in {countdown} seconds...</h1>
-          <Link to={"/"}>Back to Home</Link>
+          <h1>Din reservasjon blir behandlet!</h1>
+          <h5>Du vil bli kontaktet så snart vi finner et ledig bord.</h5>
+          <h4>
+            Du sendes tilbake til vår hjemmeside om {countdown} sekunder...
+          </h4>
+          {/* <Link to={"/"}>Hjem</Link> */}
         </div>
       </section>
     </>

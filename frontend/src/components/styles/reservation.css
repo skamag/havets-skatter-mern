@@ -123,13 +123,13 @@
   display: flex;
   justify-content: center;
 }
-.reservation .container .banner img {
+.reservation .imageContainer img {
   width: 550px;
 }
 .reservation .container .banner .reservation_form_box form button {
   border: 1px solid black;
   padding: 8px 36px;
-  border-radius: 30px;
+  border-radius: 5px;
   display: flex;
   width: fit-content;
   margin: 0 auto;
