@@ -2,7 +2,6 @@ import { data } from "../restApi.json"
 import "./styles/menu.css"
 
 const Menu = ({ showMenu, setShowMenu }) => {
-  // Helper function to render each category section
   const renderCategory = (category, title) => (
     <div className="menuSection">
       <h1>{title}</h1>
@@ -23,7 +22,7 @@ const Menu = ({ showMenu, setShowMenu }) => {
                 <p>
                   Allergener:
                   {filteredElement.allergies.map((allergy) => (
-                    <span>{" " + allergy}</span>
+                    <span key={allergy}>{" " + allergy}</span>
                   ))}
                 </p>
               </>
@@ -35,16 +34,18 @@ const Menu = ({ showMenu, setShowMenu }) => {
 
   return (
     <div className={`menuContainer ${showMenu ? "showMenu" : "hideMenu"}`}>
-      <div className="menuHeader">
-        <h1 className="menuTitle">Meny</h1>
-        <h1 onClick={() => setShowMenu(false)} className="menuX">
-          &#10006;
-        </h1>
-      </div>
-      <div className="menu">
-        {renderCategory("forrett", "Forretter")}
-        {renderCategory("hovedrett", "Hovedretter")}
-        {renderCategory("dessert", "Desserter")}
+      <div className="menuMain">
+        <div className="menuHeader">
+          <h1 className="menuTitle">Meny</h1>
+          <h1 onClick={() => setShowMenu(false)} className="menuX">
+            &#10006;
+          </h1>
+        </div>
+        <div className="menu">
+          {renderCategory("forrett", "Forretter")}
+          {renderCategory("hovedrett", "Hovedretter")}
+          {renderCategory("dessert", "Desserter")}
+        </div>
       </div>
     </div>
   )

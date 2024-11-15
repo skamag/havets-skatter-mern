@@ -27,6 +27,9 @@
 .notFound .container {
   max-width: 1500px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .notFound .container img {
   margin-bottom: 2rem;

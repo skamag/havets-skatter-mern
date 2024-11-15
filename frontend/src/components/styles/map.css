@@ -1,0 +1,117 @@
+.mapContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5% 20%;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* height: fit-content; */
+  /* opacity: 0; */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* overflow-y: visible; */
+}
+.mapSection {
+  width: fit-content;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mapContainer .mapHeader {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mapContainer .mapX {
+  font-size: 40px;
+  cursor: pointer;
+}
+.mapContainer .map {
+  background-color: #ffffff;
+  width: fit-content;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.mapContainer .map img {
+  height: 100%;
+  width: min-content;
+}
+/* .mapTables {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  height: 100%;
+}
+.m-tables,
+.s-tables {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.m-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.m-table,
+.s-table,
+.l-table {
+  overflow: hidden;
+}
+.m-tables-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.s-tables {
+  height: fit-content;
+}
+.l-table {
+}
+.m-table img,
+.s-table img,
+.l-table img {
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+} */
+/* .showmap {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hidemap {
+  opacity: 0;
+} */
+@media screen and (max-width: 900px) {
+  .mapContainer {
+    padding: 5% 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mapContainer {
+    padding: 5% 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mapContainer .cardImageContainer {
+    display: none;
+  }
+}

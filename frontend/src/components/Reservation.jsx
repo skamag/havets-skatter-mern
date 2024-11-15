@@ -5,13 +5,15 @@ import toast from "react-hot-toast"
 import { useNavigate } from "react-router-dom"
 import "./styles/reservation.css"
 
-const Reservation = () => {
+const Reservation = ({ showMap, setShowMap, children }) => {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
   const [date, setDate] = useState("")
   const [time, setTime] = useState("")
   const [phone, setPhone] = useState(0)
+  const [table, setTable] = useState(0)
+  const [tableIsSelected, setTableIsSelected] = useState(0)
   const navigate = useNavigate()
 
   const handleReservation = async (e) => {
@@ -20,7 +22,7 @@ const Reservation = () => {
       const { data } = await axios.post(
         "https://havets-skatter-mern.onrender.com/api/v1/reservation/send",
         // "http://localhost:4000/reservation/send",
-        { firstName, lastName, email, phone, date, time },
+        { firstName, lastName, email, phone, date, time, table },
         {
           headers: {
             "Content-Type": "application/json",
@@ -35,6 +37,7 @@ const Reservation = () => {
       setEmail("")
       setTime("")
       setDate("")
+      setTable(0)
       navigate("/success")
     } catch (error) {
       toast.error(error.response.data.message)
@@ -45,9 +48,9 @@ const Reservation = () => {
     <section className="reservation" id="reservation">
       <div className="container">
         <div className="banner">
-          <div className="mapContainer">
-            <div className="map">
-              <img src="whoweare-v2.png" alt="Kart" />
+          <div className="bannerImageContainer">
+            <div className="bannerImage">
+              <img src="whoweare-v2.png" alt="bannerImage" />
               {/* <img src="tables-map-v2.png" alt="Kart" /> */}
             </div>
           </div>
@@ -100,6 +103,50 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
+              <div className="tableSelect">
+                <p>
+                  <span>Velg bord (valgfritt):</span>
+                  <span>
+                    <select
+                      name=""
+                      id=""
+                      onChange={(e) => {
+                        setTableIsSelected(e.target.value)
+                        setTable(e.target.value)
+                        console.log(e.target.value)
+                      }}
+                    >
+                      <option value="0">Tilfeldig</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </span>
+                  <span
+                    className="tablesLink"
+                    onClick={() => {
+                      setShowMap(true)
+                      console.log(showMap)
+                    }}
+                  >
+                    Bordkart
+                  </span>
+                  {Number(tableIsSelected) !== 0 ? (
+                    <span className="tableSelectY">&#10004;</span>
+                  ) : (
+                    <span className="tableSelectX">&#10005;</span>
+                  )}
+                </p>
+              </div>
               <button
                 className="reservationButton"
                 type="submit"
@@ -111,6 +158,7 @@ const Reservation = () => {
           </div>
         </div>
       </div>
+      {showMap && children}
     </section>
   )
 }

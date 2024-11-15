@@ -3,12 +3,20 @@ import { Reservation } from "../models/reservationSchema.js"
 
 export const sendReservation = async (req, res, next) => {
   console.log("Request body:", req.body)
-  const { firstName, lastName, email, phone, date, time } = req.body
-  if (!firstName || !lastName || !email || !phone || !date || !time) {
+  const { firstName, lastName, email, phone, date, time, table } = req.body
+  if (!firstName || !lastName || !email || !phone || !date || !time || !table) {
     return next(new ErrorHandler("Please fill out all fields!", 400))
   }
   try {
-    await Reservation.create({ firstName, lastName, email, phone, date, time })
+    await Reservation.create({
+      firstName,
+      lastName,
+      email,
+      phone,
+      date,
+      time,
+      table,
+    })
     res.status(201).json({
       success: true,
       message: "Reservation Sent Successfully!",

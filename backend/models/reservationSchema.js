@@ -33,6 +33,10 @@ const reservationSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  table: {
+    type: String,
+    required: true,
+  },
 })
 
 export const Reservation = mongoose.model("Reservation", reservationSchema)

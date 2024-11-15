@@ -1,4 +1,5 @@
 .reservation {
+  position: relative;
   display: flex;
   min-height: 75vh;
   padding: 30px 20px;
@@ -17,7 +18,7 @@
   display: flex;
   justify-content: center;
 }
-.reservation .container .banner .mapContainer {
+.reservation .container .banner .bannerImageContainer {
   /* height: 60%; */
   width: 360px;
   /* background-color: pink; */
@@ -26,12 +27,12 @@
   /* border: 1px solid black; */
   border-radius: 10px;
 }
-.reservation .container .banner .mapContainer .map {
+.reservation .container .banner .bannerImageContainer .bannerImage {
   display: flex;
   justify-content: center;
   height: 100%;
 }
-/* .reservation .container .banner .mapContainer .map img {
+/* .reservation .container .banner .bannerImageContainer .bannerImage img {
   border: 1px solid #333;
 } */
 .reservation .container .banner .reservation_form_box {
@@ -123,6 +124,26 @@
   display: flex;
   justify-content: center;
 }
+.reservation .container .banner .tableSelect {
+  display: flex;
+  justify-content: center;
+}
+.reservation .container .banner .tableSelect p .tablesLink {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.reservation .container .banner .tableSelectX {
+  font-weight: bold;
+  color: red;
+}
+.reservation .container .banner .tableSelectY {
+  color: green;
+}
+.reservation .container .banner .tableSelect p {
+  display: flex;
+  gap: 10px;
+}
 .reservation .imageContainer img {
   width: 550px;
 }
@@ -139,7 +160,6 @@
   font-size: 13px;
   color: #111;
   background: transparent;
-  margin-top: 30px;
   cursor: pointer;
 }
 .reservation .container .banner .reservation_form_box form button:hover {

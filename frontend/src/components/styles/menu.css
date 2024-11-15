@@ -7,11 +7,15 @@
   width: 100%;
   /* height: fit-content; */
   opacity: 0;
-  /* transform: translateY(-250px); */
   transition: opacity 0.5s ease, transform 0.5s ease;
   pointer-events: none;
   overflow-y: visible;
 }
+/* .menuMain {
+  transform: translateY(-250px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 101;
+} */
 .menuContainer .menuHeader {
   color: white;
   display: flex;
