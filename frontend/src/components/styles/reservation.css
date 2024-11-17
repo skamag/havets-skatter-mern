@@ -32,16 +32,12 @@
   justify-content: center;
   height: 100%;
 }
-/* .reservation .container .banner .bannerImageContainer .bannerImage img {
-  border: 1px solid #333;
-} */
 .reservation .container .banner .reservationFormBox {
   width: 400px;
   /* background: #fff; */
   /* height: 100%; */
   padding: 20px;
   /* border: 1px solid #333; */
-  border-radius: 5px;
 }
 .reservation .container .banner .reservationFormBox form div {
   display: flex;

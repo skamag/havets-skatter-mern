@@ -33,6 +33,7 @@
 .mapContainer .mapX {
   font-size: 40px;
   cursor: pointer;
+  color: white;
 }
 .mapContainer .map {
   background-color: #ffffff;

@@ -18,7 +18,7 @@ const Dishes = () => {
           <div className="dishesContainer">
             {data[0].dishes.map((element) => (
               <div className="card" key={element.id}>
-                <img src={"/about-1.jpg"} alt={element.title} />
+                <img src={element.image} alt={element.title} />
                 <h3>MATRETT</h3>
                 {/* <h3>{element.title}</h3> */}
                 <button>{element.category}</button>

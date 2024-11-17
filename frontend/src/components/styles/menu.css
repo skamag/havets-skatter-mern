@@ -30,12 +30,22 @@
 .menuContainer .menuTitle {
   font-size: 2rem;
 }
-
-.menuContainer .menuSearch {
+.menuContainer .menu .menuSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.menuOptions {
+  display: flex;
+  gap: 2rem;
+}
+.menuSearch,
+.menuSort {
   display: flex;
   gap: 1rem;
 }
-.menuContainer .menuSearch input:focus {
+.menuSearch input:focus,
+.menuSort select:focus {
   outline: none;
 }
 .menuContainer .menuX {
@@ -43,25 +53,23 @@
   cursor: pointer;
   display: flex;
   align-items: baseline;
+  color: white;
 }
 .menuContainer .menu {
   background-color: white;
   /* border-radius: 5px; */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   padding: 2rem;
 }
+
 .menuContainer .menuItems {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-.menuContainer .menu .menuSection {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 .menuContainer .logo {
   font-size: 1.5rem;
 }
@@ -97,18 +105,30 @@
   opacity: 0;
   /* transform: translateY(-250px); */
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
+  .menuContainer {
+    padding: 5% 15%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .menuContainer {
     padding: 5% 10%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .menuContainer {
     padding: 5% 5%;
   }
+  .menuOptions {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .menuContainer .cardImageContainer {
     display: none;
+  }
+  .menuContainer .menuSearch {
+    flex-direction: column;
   }
 }

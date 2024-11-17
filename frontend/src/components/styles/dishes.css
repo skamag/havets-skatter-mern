@@ -75,7 +75,9 @@
     width: 50%;
   }
   .dishes .container .dishesContainer .card img {
-    height: auto;
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    object-position: center; /* Keeps the crop centered */
+    height: 300px;
   }
   .dishes .container .dishesContainer .card h3 {
     font-size: 1.6rem;

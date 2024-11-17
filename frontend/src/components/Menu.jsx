@@ -4,12 +4,28 @@ import "./styles/menu.css"
 
 const Menu = ({ showMenu, setShowMenu }) => {
   const [menuInput, setMenuInput] = useState("")
+  const [sortOption, setSortOption] = useState("") // Sorting state
+
+  const sortMenu = (menu) => {
+    switch (sortOption) {
+      case "priceAsc":
+        return menu.sort((a, b) => a.price - b.price)
+      case "priceDesc":
+        return menu.sort((a, b) => b.price - a.price)
+      case "alphabetical":
+        return menu.sort((a, b) => a.title.localeCompare(b.title))
+      default:
+        return menu
+    }
+  }
 
   const renderCategory = (category, title) => {
-    const filteredMenu = data[0].menu.filter(
-      (element) =>
-        element.category.toString() === category &&
-        element.title.toLowerCase().includes(menuInput.toLowerCase())
+    const filteredMenu = sortMenu(
+      data[0].menu.filter(
+        (element) =>
+          element.category.toString() === category &&
+          element.title.toLowerCase().includes(menuInput.toLowerCase())
+      )
     )
 
     return (
@@ -56,20 +72,35 @@ const Menu = ({ showMenu, setShowMenu }) => {
         </div>
 
         <div className="menu">
-          <p className="menuSearch">
-            <span>Søk etter matvare:</span>
-            <span>
-              <input
-                type="text"
-                value={menuInput}
-                onChange={(e) => setMenuInput(e.target.value)}
-              />
-            </span>
-          </p>
-          <div className="menuItems"></div>
-          {renderCategory("forrett", "Forretter")}
-          {renderCategory("hovedrett", "Hovedretter")}
-          {renderCategory("dessert", "Desserter")}
+          <div className="menuOptions">
+            <p className="menuSearch">
+              <span>Søk etter matvare:</span>
+              <span>
+                <input
+                  type="text"
+                  value={menuInput}
+                  onChange={(e) => setMenuInput(e.target.value)}
+                />
+              </span>
+            </p>
+            <p className="menuSort">
+              <span>Sorter etter:</span>
+              <select
+                value={sortOption}
+                onChange={(e) => setSortOption(e.target.value)}
+              >
+                <option value="">Ingen sortering</option>
+                <option value="priceAsc">Pris (lav til høy)</option>
+                <option value="priceDesc">Pris (høy til lav)</option>
+                <option value="alphabetical">Alfabetisk</option>
+              </select>
+            </p>
+          </div>
+          <div className="menuItems">
+            {renderCategory("forrett", "Forretter")}
+            {renderCategory("hovedrett", "Hovedretter")}
+            {renderCategory("dessert", "Desserter")}
+          </div>
         </div>
       </div>
     </div>

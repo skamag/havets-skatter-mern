@@ -105,26 +105,26 @@
       ],
       "dishes": [
         {
-          "id": 2,
-          "image": "./dinner2.png",
+          "id": 1,
+          "image": "./dishes1.jpg",
           "title": "SITRUSSPEKET LAKS",
           "category": "Middag"
         },
         {
-          "id": 3,
-          "image": "./breakfast1.png",
+          "id": 2,
+          "image": "./dishes2.jpg",
           "title": "PANNESTEKT HAVABBOR",
           "category": "Frokost"
         },
         {
-          "id": 6,
-          "image": "./dinner4.png",
+          "id": 3,
+          "image": "./dishes3.jpg",
           "title": "MUSLINGSUPPE",
           "category": "Middag"
         },
         {
-          "id": 8,
-          "image": "./dinner6.png",
+          "id": 4,
+          "image": "./dishes4.jpg",
           "title": "GRILLET FISK",
           "category": "Middag"
         }
