@@ -13,7 +13,6 @@ const Reservation = ({ showMap, setShowMap, children }) => {
   const [time, setTime] = useState("")
   const [phone, setPhone] = useState(0)
   const [table, setTable] = useState(0)
-  const [tableIsSelected, setTableIsSelected] = useState(0)
   const navigate = useNavigate()
 
   const handleReservation = async (e) => {
@@ -50,13 +49,13 @@ const Reservation = ({ showMap, setShowMap, children }) => {
         <div className="banner">
           <div className="bannerImageContainer">
             <div className="bannerImage">
-              <img src="whoweare-v2.png" alt="bannerImage" />
+              <img src="reservationImage.png" alt="bannerImage" />
               {/* <img src="tables-map-v2.png" alt="Kart" /> */}
             </div>
           </div>
         </div>
         <div className="banner">
-          <div className="reservation_form_box">
+          <div className="reservationFormBox">
             <h1>RESERVER BORD</h1>
             <p>For øvrige spørsmål, kontakt oss på tlf.</p>
             <form>
@@ -92,7 +91,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                 <input
                   type="email"
                   placeholder="Epost"
-                  className="email_tag"
+                  className="emailTag"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -103,50 +102,55 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <div className="tableSelect">
-                <p>
-                  <span>Velg bord (valgfritt):</span>
-                  <span>
-                    <select
-                      name=""
-                      id=""
-                      onChange={(e) => {
-                        setTableIsSelected(e.target.value)
-                        setTable(e.target.value)
-                        console.log(e.target.value)
+              {date !== "" && time !== "" && (
+                <div className="tableSelect">
+                  <p>
+                    <span>Velg bord (valgfritt):</span>
+                    <span>
+                      <select
+                        name=""
+                        id=""
+                        onChange={(e) => {
+                          setTable(e.target.value)
+                          console.log(e.target.value)
+                        }}
+                      >
+                        <option value="0">Tilfeldig</option>
+                        {/* <option value="0">4-seter</option>
+                      <option value="0">2-seter</option>
+                      <option value="0">10-seter</option> */}
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </span>
+                    <span
+                      className="tablesLink"
+                      onClick={() => {
+                        setShowMap(true)
+                        console.log(showMap)
                       }}
                     >
-                      <option value="0">Tilfeldig</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </span>
-                  <span
-                    className="tablesLink"
-                    onClick={() => {
-                      setShowMap(true)
-                      console.log(showMap)
-                    }}
-                  >
-                    Bordkart
-                  </span>
-                  {Number(tableIsSelected) !== 0 ? (
-                    <span className="tableSelectY">&#10004;</span>
-                  ) : (
-                    <span className="tableSelectX">&#10005;</span>
-                  )}
-                </p>
-              </div>
+                      Bordkart
+                    </span>
+                    {/* {Number(table) !== 0 ? (
+                      <span className="tableSelectY">&#10004;</span>
+                    ) : (
+                      <span className="tableSelectX">&#10005;</span>
+                    )} */}
+                  </p>
+                </div>
+              )}
+
               <button
                 className="reservationButton"
                 type="submit"

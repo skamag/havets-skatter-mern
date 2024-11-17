@@ -3,9 +3,7 @@ import Menu from "../../components/Menu"
 import Map from "../../components/Map"
 import HeroSection from "../../components/HeroSection"
 import About from "../../components/About"
-// import Qualities from "../../components/Qualities"
 import Dishes from "../../components/Dishes"
-// import WhoAreWe from "../../components/WhoAreWe"
 import Team from "../../components/Team"
 import Reservation from "../../components/Reservation"
 import Footer from "../../components/Footer"
@@ -30,9 +28,6 @@ const Home = () => {
           <Footer />
         </>
       )}
-
-      {/* <Qualities /> */}
-      {/* <WhoAreWe /> */}
     </main>
   )
 }

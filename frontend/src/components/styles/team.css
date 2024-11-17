@@ -13,22 +13,22 @@
   flex-direction: column;
   align-items: center;
 }
-.team .container .heading_section {
+.team .container .headingSection {
   text-align: center;
   margin-bottom: 12px;
 }
-.team .container .heading_section p {
+.team .container .headingSection p {
   color: #333;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
-.team .container .team_container {
+.team .container .teamContainer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.team .container .team_container .card {
+.team .container .teamContainer .card {
   width: 25%;
   padding: 20px;
   margin-bottom: 12px;
@@ -36,14 +36,14 @@
   flex-direction: column;
   align-items: center;
 }
-.team .container .team_container .card img {
+.team .container .teamContainer .card img {
   width: 175px;
   margin-bottom: 1rem;
 }
-.team .container .team_container .card h3 {
+.team .container .teamContainer .card h3 {
   font-size: 1.5rem;
 }
-.team .container .team_container .card p {
+.team .container .teamContainer .card p {
   font-size: 18px;
   font-weight: 300;
   color: #333;
@@ -54,28 +54,28 @@
   }
 }
 @media (max-width: 1050px) {
-  .team .container .team_container .card img {
+  .team .container .teamContainer .card img {
     width: 135px;
   }
 }
 @media (max-width: 910px) {
-  .team .container .team_container .card h3 {
+  .team .container .teamContainer .card h3 {
     font-size: 1.3rem;
   }
 }
 @media (max-width: 810px) {
-  .team .container .team_container .card {
+  .team .container .teamContainer .card {
     width: 50%;
   }
-  .team .container .team_container .card img {
+  .team .container .teamContainer .card img {
     width: 220px;
   }
 }
 @media (max-width: 550px) {
-  .team .container .team_container .card {
+  .team .container .teamContainer .card {
     width: 100%;
   }
-  .team .container .team_container .card img {
+  .team .container .teamContainer .card img {
     width: 150px;
   }
 }

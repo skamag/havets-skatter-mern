@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "./Navbar"
-import "./styles/heroSection.css"
+// import "./styles/heroSection.css"
 
 const HeroSection = ({ setShowMenu }) => {
   return (

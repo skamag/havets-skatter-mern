@@ -1,5 +1,5 @@
 .mapContainer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -38,7 +38,7 @@
   background-color: #ffffff;
   width: fit-content;
   height: 90%;
-  border-radius: 10px;
+  /* border-radius: 5px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,18 +100,28 @@
 .hidemap {
   opacity: 0;
 } */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 885px) {
   .mapContainer {
-    padding: 5% 10%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .mapContainer {
+    height: 100%;
+    /* height: fit-content; */
     padding: 5% 5%;
+    align-items: center;
   }
-}
-@media screen and (max-width: 500px) {
-  .mapContainer .cardImageContainer {
-    display: none;
+  .mapSection {
+    height: fit-content;
+  }
+  .mapContainer .map {
+    width: fit-content;
+    height: 90%;
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .mapContainer .map img {
+    width: 100%;
+    height: auto;
   }
 }

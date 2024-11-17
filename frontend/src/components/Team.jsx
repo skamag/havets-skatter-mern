@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <section className="team" id="team">
       <div className="container">
-        <div className="heading_section">
+        <div className="headingSection">
           <h1 className="heading">VÅRT TEAM</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -14,7 +14,7 @@ const Team = () => {
             perferendis laborum.
           </p>
         </div>
-        <div className="team_container">
+        <div className="teamContainer">
           {data[0].team.map((element) => {
             return (
               <div className="card" key={element.id}>

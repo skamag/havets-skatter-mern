@@ -13,36 +13,36 @@
   flex-direction: column;
   align-items: center;
 }
-.dishes .container .heading_section {
+.dishes .container .headingSection {
   text-align: center;
   margin-bottom: 12px;
 }
-.dishes .container .heading_section p {
+.dishes .container .headingSection p {
   color: #333;
   font-size: 18px;
   font-weight: 300;
 }
-.dishes .container .dishes_container {
+.dishes .container .dishesContainer {
   display: flex;
   flex-wrap: wrap;
 }
-.dishes .container .dishes_container .card {
+.dishes .container .dishesContainer .card {
   width: 25%;
   position: relative;
   padding: 20px 12.5px;
   margin-bottom: 12px;
   position: relative;
 }
-.dishes .container .dishes_container .card img {
+.dishes .container .dishesContainer .card img {
   width: 100%;
   height: 370px;
-  border-radius: 10px;
+  /* border-radius: 5px; */
 }
-.dishes .container .dishes_container .card h3 {
+.dishes .container .dishesContainer .card h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.dishes .container .dishes_container .card button {
+.dishes .container .dishesContainer .card button {
   position: absolute;
   top: 40px;
   left: 25px;
@@ -50,10 +50,10 @@
   color: #fff;
   background: linear-gradient(186deg, black, #7e7a7a8a);
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 16px;
 }
-.dishes .container .dishes_container .card:hover img {
+.dishes .container .dishesContainer .card:hover img {
   transition: 0.3s;
   transform: scale(1.03);
 }
@@ -63,31 +63,31 @@
   }
 }
 @media (max-width: 1200px) {
-  .dishes .container .dishes_container .card img {
+  .dishes .container .dishesContainer .card img {
     height: 325px;
   }
-  .dishes .container .dishes_container .card h3 {
+  .dishes .container .dishesContainer .card h3 {
     font-size: 1.3rem;
   }
 }
 @media (max-width: 1000px) {
-  .dishes .container .dishes_container .card {
+  .dishes .container .dishesContainer .card {
     width: 50%;
   }
-  .dishes .container .dishes_container .card img {
+  .dishes .container .dishesContainer .card img {
     height: auto;
   }
-  .dishes .container .dishes_container .card h3 {
+  .dishes .container .dishesContainer .card h3 {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 600px) {
-  .dishes .container .dishes_container .card h3 {
+  .dishes .container .dishesContainer .card h3 {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 450px) {
-  .dishes .container .dishes_container .card {
+  .dishes .container .dishesContainer .card {
     width: 100%;
     padding: 20px 0;
   }

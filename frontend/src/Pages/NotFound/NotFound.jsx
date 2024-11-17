@@ -7,9 +7,9 @@ const NotFound = () => {
       <section className="notFound">
         <div className="container">
           <img src="/notFound.svg" alt="notFound" />
-          <h1>LOOKS LIKE YOU'RE LOST</h1>
-          <p>We can't seem to find you the page you're looking for</p>
-          <Link to={"/"}>Back to Home </Link>
+          <h1>FEIL OPPSTÅTT</h1>
+          <p>We finner ikke siden du leter etter</p>
+          <Link to={"/"}>Hjem</Link>
         </div>
       </section>
     </>

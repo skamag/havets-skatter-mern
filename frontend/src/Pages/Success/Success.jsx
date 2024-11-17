@@ -23,7 +23,7 @@ const Success = () => {
         <div className="container">
           <div>
             <h1>Din reservasjon blir behandlet!</h1>
-            <h5>Du vil bli kontaktet så snart vi finner et ledig bord.</h5>
+            <h5>Du vil bli tilsendt bekreftelse på reservasjon.</h5>
           </div>
           <h4>
             Du sendes tilbake til vår hjemmeside om {countdown} sekunder...

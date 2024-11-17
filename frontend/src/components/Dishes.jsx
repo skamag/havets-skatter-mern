@@ -7,7 +7,7 @@ const Dishes = () => {
     <>
       <section className="dishes" id="dishes">
         <div className="container">
-          <div className="heading_section">
+          <div className="headingSection">
             <h1 className="heading">POPULÆRE RETTER</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
@@ -15,7 +15,7 @@ const Dishes = () => {
               pariatur eius et recusandae veritatis. Quasi, et molestias!
             </p>
           </div>
-          <div className="dishes_container">
+          <div className="dishesContainer">
             {data[0].dishes.map((element) => (
               <div className="card" key={element.id}>
                 <img src={"/about-1.jpg"} alt={element.title} />
