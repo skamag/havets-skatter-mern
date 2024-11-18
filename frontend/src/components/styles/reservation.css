@@ -1,8 +1,8 @@
 .reservation {
   position: relative;
   display: flex;
-  min-height: 75vh;
-  padding: 30px 20px;
+  /* min-height: 75vh; */
+  padding: 3rem 20px;
   justify-content: center;
   align-items: center;
   background-color: #eee;
