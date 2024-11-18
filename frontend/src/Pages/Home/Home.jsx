@@ -1,11 +1,12 @@
 import { useState } from "react"
 import Menu from "../../components/Menu"
-import Map from "../../components/Map"
+import Map from "../../components/Map.jsx"
 import HeroSection from "../../components/HeroSection"
 import About from "../../components/About"
 import Dishes from "../../components/Dishes"
 import Team from "../../components/Team"
 import Reservation from "../../components/Reservation"
+import Contact from "../../components/Contact.jsx"
 import Footer from "../../components/Footer"
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
             <Map showMap={showMap} setShowMap={setShowMap} />
           </Reservation>
           <Team />
+          <Contact />
           <Footer />
         </>
       )}

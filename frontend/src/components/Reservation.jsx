@@ -11,7 +11,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
   const [email, setEmail] = useState("")
   const [date, setDate] = useState("")
   const [time, setTime] = useState("")
-  const [phone, setPhone] = useState(0)
+  const [phone, setPhone] = useState("")
   const [table, setTable] = useState(0)
   const navigate = useNavigate()
 
@@ -50,7 +50,6 @@ const Reservation = ({ showMap, setShowMap, children }) => {
           <div className="bannerImageContainer">
             <div className="bannerImage">
               <img src="reservationImage.png" alt="bannerImage" />
-              {/* <img src="tables-map-v2.png" alt="Kart" /> */}
             </div>
           </div>
         </div>
@@ -59,13 +58,14 @@ const Reservation = ({ showMap, setShowMap, children }) => {
             <h1>RESERVER BORD</h1>
             <p>For øvrige spørsmål, kontakt oss på tlf.</p>
             <form>
-              <div>
+              <div className="formRow">
                 <input
                   type="text"
                   placeholder="Fornavn"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
+
                 <input
                   type="text"
                   placeholder="Etternavn"
@@ -73,7 +73,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                   onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
-              <div>
+              <div className="formRow">
                 <input
                   type="date"
                   placeholder="Dato"
@@ -87,7 +87,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                   onChange={(e) => setTime(e.target.value)}
                 />
               </div>
-              <div>
+              <div className="formRow">
                 <input
                   type="email"
                   placeholder="Epost"

@@ -52,6 +52,7 @@
   border: none;
   border-bottom: 1px solid #333;
   background: transparent;
+  width: 50%;
 }
 .reservation .container .banner .reservationFormBox form input[type="email"] {
   width: 100%;
@@ -204,6 +205,9 @@
     gap: 25px;
     margin-bottom: 20px; */
     flex-direction: column;
+  }
+  .reservation .container .banner .reservationFormBox form div input {
+    width: 100%;
   }
   .reservation .container .banner .reservationFormBox form div p {
     display: flex;

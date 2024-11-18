@@ -1,0 +1,110 @@
+.contactBox {
+  margin: 3rem 0;
+}
+.contactHeaderBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 0 20% 0 20%;
+}
+/* .contactIngress {
+  color: rgb(215, 215, 237);
+  margin-top: 25px;
+} */
+#contactForm {
+  /* background-color: rgb(25, 25, 25); */
+  background-color: white;
+  margin: 2rem 25% 0 25%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#contactForm div label {
+  color: rgb(25, 25, 25);
+}
+#contactForm div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* color: rgb(100, 100, 100); */
+}
+#contactForm textarea,
+#contactForm input:not(.submitButton) {
+  background-color: rgb(240, 240, 240);
+  color: rgb(25, 25, 25);
+  font-family: sans-serif;
+}
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  border: none;
+  padding: 20px;
+  resize: none;
+  outline: none;
+}
+#contactForm input:focus {
+  outline: none;
+}
+.submit input {
+  /* cursor: pointer;
+  margin-left: auto;
+  width: 30%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 1px solid black;
+  color: rgb(25, 25, 25); */
+  border: 1px solid black;
+  padding: 8px 36px;
+  border-radius: 5px;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: #111;
+  background: transparent;
+  cursor: pointer;
+}
+.submit input:hover {
+  background-color: rgb(210, 210, 210);
+  /* background-color: rgb(202, 202, 202); */
+  /* background-color: rgb(127, 92, 254); */
+}
+.submit input:active {
+  background-color: rgb(195, 195, 195);
+  /* background-color: rgb(156, 156, 156); */
+  /* background-color: rgb(52, 25, 152); */
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contactForm {
+    margin: 75px 15% 0 15%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contactForm {
+    margin: 25px 5% 0 5%;
+  }
+  .contactHeaderBox {
+    padding: 0 5% 0 5%;
+  }
+  .submit input {
+    width: 50%;
+  }
+}
