@@ -1,13 +1,13 @@
 import "./styles/contact.css"
 
-export default function Contact({ engelsk }) {
+export default function Contact() {
   return (
     <>
       <div className="contactHeaderBox">
         {/* <h1 className={contactHeader show}>
             Kontakt
           </h1> */}
-        <div className={`contactIngress show`}>KONTAKTSKJEMA</div>
+        <div className={"contactIngress show"}>KOM I KONTAKT MED OSS</div>
       </div>
       <section className="contactSection">
         <div className="contactBox" id="contact">

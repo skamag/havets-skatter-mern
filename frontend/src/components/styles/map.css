@@ -33,7 +33,8 @@
 .mapContainer .mapX {
   font-size: 40px;
   cursor: pointer;
-  color: white;
+  color: white !important;
+  -webkit-text-fill-color: white;
 }
 .mapContainer .map {
   background-color: #ffffff;
