@@ -54,6 +54,7 @@
   display: flex;
   align-items: baseline;
   color: white;
+  font-weight: lighter;
 }
 .menuContainer .menu {
   background-color: white;
@@ -128,7 +129,12 @@
   .menuContainer .cardImageContainer {
     display: none;
   }
-  .menuContainer .menuSearch {
+  .menuSearch,
+  .menuSort {
     flex-direction: column;
+  }
+  .menuSearch input,
+  .menuSort select {
+    width: 100%;
   }
 }
