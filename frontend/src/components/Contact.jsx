@@ -2,7 +2,7 @@ import "./styles/contact.css"
 
 export default function Contact() {
   return (
-    <>
+    <div className="contactContainer">
       <div className="contactHeaderBox">
         {/* <h1 className={contactHeader show}>
             Kontakt
@@ -21,6 +21,7 @@ export default function Contact() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="iframe"
             ></iframe>
           </div>
           {/* <div className="contactHeaderBox">
@@ -85,9 +86,10 @@ export default function Contact() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="iframe"
           ></iframe>
         </div>
       </section>
-    </>
+    </div>
   )
 }

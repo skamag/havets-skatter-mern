@@ -6,7 +6,17 @@ const Map = ({ showMap, setShowMap }) => {
       <div className="mapSection">
         <div className="mapHeader">
           <h1 className="mapTitle">Velg bord</h1>
-          <h1 onClick={() => setShowMap(false)} className="mapX">
+          <h1
+            onClick={() => setShowMap(false)}
+            className="mapX"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                setShowMap(false)
+              }
+            }}
+          >
             &#10006;
           </h1>
         </div>
@@ -51,7 +61,7 @@ const Map = ({ showMap, setShowMap }) => {
               <img src="/l-table.png"></img>
             </div>
           </div> */}
-          <img src="/tables-map-numbered.png"></img>
+          <img src="/tables-map-numbered.png" alt="map-numbered"></img>
         </div>
       </div>
     </div>

@@ -6,6 +6,14 @@ import "./styles/navbar.css"
 
 const Navbar = ({ setShowMenu }) => {
   const [show, setShow] = useState(false)
+
+  const handleToggleMenu = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault()
+      setShow(!show)
+    }
+  }
+
   return (
     <>
       <nav>
@@ -25,6 +33,16 @@ const Navbar = ({ setShowMenu }) => {
                 duration={500}
                 key={element.id}
                 onClick={() => setShow(false)}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault() // Prevent default behavior for keyboard interaction
+                    document
+                      .querySelector(`#${element.link}`)
+                      ?.scrollIntoView({ behavior: "smooth" })
+                    setShow(false) // Close the menu if required
+                  }
+                }}
               >
                 {element.title}
               </Link>
@@ -34,7 +52,15 @@ const Navbar = ({ setShowMenu }) => {
             MENY
           </button>
         </div>
-        <div className="hamburger" onClick={() => setShow(!show)}>
+        <div
+          className="hamburger"
+          tabIndex={0}
+          onClick={() => setShow(!show)}
+          onKeyDown={handleToggleMenu} // Allow toggle with Enter/Space
+          role="button" // Accessibility role
+          aria-label="Toggle navigation menu" // Accessibility label
+          aria-expanded={show} // Accessibility state
+        >
           <GiHamburgerMenu />
         </div>
       </nav>

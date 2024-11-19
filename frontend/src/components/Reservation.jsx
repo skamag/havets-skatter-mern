@@ -107,8 +107,9 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                   <p>
                     <span>Velg bord (valgfritt):</span>
                     <span>
+                      <label htmlFor="bord"></label>
                       <select
-                        name=""
+                        name="bord"
                         id=""
                         onChange={(e) => {
                           setTable(e.target.value)
@@ -139,6 +140,9 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                         setShowMap(true)
                         console.log(showMap)
                       }}
+                      tabIndex={0}
+                      onKeyDown={setShowMap} // Allow toggle with Enter/Space
+                      role="button" // Accessibility role
                     >
                       Bordkart
                     </span>
@@ -155,6 +159,12 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                 className="reservationButton"
                 type="submit"
                 onClick={handleReservation}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault()
+                    handleReservation
+                  }
+                }}
               >
                 RESERVER{" "}
               </button>

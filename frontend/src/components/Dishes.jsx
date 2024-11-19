@@ -21,7 +21,7 @@ const Dishes = () => {
                 <img src={element.image} alt={element.title} />
                 <h3>MATRETT</h3>
                 {/* <h3>{element.title}</h3> */}
-                <button>{element.category}</button>
+                <button tabIndex={-1}>{element.category}</button>
               </div>
             ))}
           </div>

@@ -66,7 +66,17 @@ const Menu = ({ showMenu, setShowMenu }) => {
       <div className="menuMain">
         <div className="menuHeader">
           <div className="menuTitle">Meny</div>
-          <h1 onClick={() => setShowMenu(false)} className="menuX">
+          <h1
+            onClick={() => setShowMenu(false)}
+            className="menuX"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                setShowMenu(false)
+              }
+            }}
+          >
             &#10006;
           </h1>
         </div>
@@ -76,7 +86,9 @@ const Menu = ({ showMenu, setShowMenu }) => {
             <p className="menuSearch">
               <span>Søk etter matvare:</span>
               <span>
+                <label htmlFor="search"></label>
                 <input
+                  name="search"
                   type="text"
                   value={menuInput}
                   onChange={(e) => setMenuInput(e.target.value)}
@@ -85,15 +97,19 @@ const Menu = ({ showMenu, setShowMenu }) => {
             </p>
             <p className="menuSort">
               <span>Sorter etter:</span>
-              <select
-                value={sortOption}
-                onChange={(e) => setSortOption(e.target.value)}
-              >
-                <option value="">Ingen sortering</option>
-                <option value="priceAsc">Pris (lav til høy)</option>
-                <option value="priceDesc">Pris (høy til lav)</option>
-                <option value="alphabetical">Alfabetisk</option>
-              </select>
+              <span>
+                <label htmlFor="sort"></label>
+                <select
+                  name="sort"
+                  value={sortOption}
+                  onChange={(e) => setSortOption(e.target.value)}
+                >
+                  <option value="">Ingen sortering</option>
+                  <option value="priceAsc">Pris (lav til høy)</option>
+                  <option value="priceDesc">Pris (høy til lav)</option>
+                  <option value="alphabetical">Alfabetisk</option>
+                </select>
+              </span>
             </p>
           </div>
           <div className="menuItems">
