@@ -19,7 +19,7 @@ const Dishes = () => {
             {data[0].dishes.map((element) => (
               <div className="card" key={element.id}>
                 <img src={element.image} alt={element.title} />
-                <h3>MATRETT</h3>
+                <h2>MATRETT</h2>
                 {/* <h3>{element.title}</h3> */}
                 <button tabIndex={-1}>{element.category}</button>
               </div>

@@ -84,9 +84,8 @@ const Menu = ({ showMenu, setShowMenu }) => {
         <div className="menu">
           <div className="menuOptions">
             <p className="menuSearch">
-              <span>Søk etter matvare:</span>
+              <label htmlFor="search">Søk etter matvare:</label>
               <span>
-                <label htmlFor="search"></label>
                 <input
                   name="search"
                   type="text"
@@ -96,9 +95,8 @@ const Menu = ({ showMenu, setShowMenu }) => {
               </span>
             </p>
             <p className="menuSort">
-              <span>Sorter etter:</span>
+              <label htmlFor="sort">Sorter etter:</label>
               <span>
-                <label htmlFor="sort"></label>
                 <select
                   name="sort"
                   value={sortOption}

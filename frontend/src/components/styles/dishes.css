@@ -38,8 +38,8 @@
   height: 370px;
   /* border-radius: 5px; */
 }
-.dishes .container .dishesContainer .card h3 {
-  font-size: 1.5rem;
+.dishes .container .dishesContainer .card h2 {
+  font-size: 1.25rem;
   font-weight: 500;
 }
 .dishes .container .dishesContainer .card button {
