@@ -113,19 +113,19 @@
         {
           "id": 2,
           "image": "./dishes2.jpg",
-          "title": "PANNESTEKT HAVABBOR",
+          "title": "PANNESTEKT KONGEKRABBE",
           "category": "Frokost"
         },
         {
           "id": 3,
           "image": "./dishes3.jpg",
-          "title": "MUSLINGSUPPE",
+          "title": "MUSLING- OG REKESUPPE",
           "category": "Middag"
         },
         {
           "id": 4,
           "image": "./dishes4.jpg",
-          "title": "GRILLET FISK",
+          "title": "OVNSBAKTE REKER",
           "category": "Middag"
         }
       ],

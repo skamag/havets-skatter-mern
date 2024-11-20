@@ -33,14 +33,20 @@
   margin-bottom: 12px;
   position: relative;
 }
+/* .dishes .container .dishesContainer .card .dishesImageContainer {
+  width: 100%;
+  background-color: red;
+} */
 .dishes .container .dishesContainer .card img {
   width: 100%;
   height: 370px;
+  display: block;
   /* border-radius: 5px; */
 }
 .dishes .container .dishesContainer .card h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
+  margin: 0.5rem 0;
 }
 .dishes .container .dishesContainer .card button {
   position: absolute;

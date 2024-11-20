@@ -18,8 +18,11 @@ const Dishes = () => {
           <div className="dishesContainer">
             {data[0].dishes.map((element) => (
               <div className="card" key={element.id}>
+                {/* <div className="dishesImageContainer"> */}
                 <img src={element.image} alt={element.title} />
-                <h2>MATRETT</h2>
+                {/* </div> */}
+
+                <h2>{element.title}</h2>
                 {/* <h3>{element.title}</h3> */}
                 <button tabIndex={-1}>{element.category}</button>
               </div>

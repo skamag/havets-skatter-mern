@@ -34,6 +34,7 @@ const Navbar = ({ setShowMenu }) => {
                 key={element.id}
                 onClick={() => setShow(false)}
                 tabIndex={0}
+                href={`#${element.link}`}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault() // Prevent default behavior for keyboard interaction
