@@ -39,18 +39,19 @@
   font-size: 4rem;
   color: #111;
 }
-.about .container .banner .mid {
-  width: 100%;
-  font-size: 18px;
-  font-weight: 300;
-  word-spacing: 5px;
-}
 .about .container .banner .top p {
   font-size: 18px;
   font-weight: 400;
   color: #111;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   margin-bottom: 1rem;
+}
+.about .container .banner .mid {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  /* word-spacing: 5px; */
+  line-height: 1.75rem;
 }
 @media (max-width: 1050px) {
   .about .container .banner:first-child {

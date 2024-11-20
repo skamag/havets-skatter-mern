@@ -49,6 +49,7 @@ footer .container .banner .right {
   text-align: end;
   font-size: 18px;
   color: #333;
+  line-height: 1.75rem;
 }
 @media (max-width: 1520px) {
   footer .container {

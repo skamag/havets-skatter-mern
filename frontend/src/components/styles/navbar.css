@@ -49,7 +49,7 @@ nav .navLinks .links a {
   color: #555;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 1.4px;
+  /* letter-spacing: 1.4px; */
 }
 nav .navLinks .links a:hover {
   color: #222;
@@ -70,22 +70,36 @@ nav .menuBtn div {
   align-items: center;
   gap: 0.25rem;
 }
-.black-fork-and-knife {
-  display: block;
+.menuButtonImageContainer {
+  position: relative;
   height: 1.25rem;
+  width: 1.25rem;
+}
+.black-fork-and-knife,
+.white-fork-and-knife {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* transition: opacity 0.3s ease; */
+}
+
+.black-fork-and-knife {
+  opacity: 1;
 }
 
 .white-fork-and-knife {
-  display: none;
-  height: 1.25rem;
+  opacity: 0;
 }
 
 .menuBtn:hover .black-fork-and-knife {
-  display: none;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .menuBtn:hover .white-fork-and-knife {
-  display: block;
+  opacity: 1;
+  transition: 0.3s;
 }
 nav .menuBtn:hover {
   color: #fff;
