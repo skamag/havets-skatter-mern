@@ -61,7 +61,7 @@ const Map = ({ showMap, setShowMap }) => {
               <img src="/l-table.png"></img>
             </div>
           </div> */}
-          <img src="/tables-map-numbered.png" alt="map-numbered"></img>
+          <img src="/tables-map-numbered.webp" alt="map-numbered"></img>
         </div>
       </div>
     </div>

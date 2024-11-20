@@ -50,7 +50,21 @@ const Navbar = ({ setShowMenu }) => {
             ))}
           </div>
           <button className="menuBtn" onClick={() => setShowMenu(true)}>
-            MENY
+            <div>
+              MENY
+              <span className="menuButtonImageContainer">
+                <img
+                  className="black-fork-and-knife"
+                  src="/icons8-fork-and-knife-66-black-solid.webp"
+                  alt="menuIcon"
+                />
+                <img
+                  className="white-fork-and-knife"
+                  src="/icons8-fork-and-knife-66-white-solid.webp"
+                  alt="menuIcon"
+                />
+              </span>
+            </div>
           </button>
         </div>
         <div

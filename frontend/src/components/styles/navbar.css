@@ -62,7 +62,30 @@ nav .menuBtn {
   background: transparent;
   border: 1px solid #333;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
+}
+nav .menuBtn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.black-fork-and-knife {
+  display: block;
+  height: 1.25rem;
+}
+
+.white-fork-and-knife {
+  display: none;
+  height: 1.25rem;
+}
+
+.menuBtn:hover .black-fork-and-knife {
+  display: none;
+}
+
+.menuBtn:hover .white-fork-and-knife {
+  display: block;
 }
 nav .menuBtn:hover {
   color: #fff;

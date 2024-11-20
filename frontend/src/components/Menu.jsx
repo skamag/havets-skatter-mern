@@ -35,7 +35,7 @@ const Menu = ({ showMenu, setShowMenu }) => {
           filteredMenu.map((filteredElement) => (
             <div className="card" key={filteredElement.id}>
               <div className="cardImageContainer">
-                <img src={"/menu-2.jpg"} alt={filteredElement.title} />
+                <img src={"/menu-2.webp"} alt={filteredElement.title} />
                 {/* <img src={"/menu-1.jpg"} alt={filteredElement.title} /> */}
               </div>
               <div className="cardTextContainer">

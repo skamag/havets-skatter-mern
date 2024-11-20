@@ -106,25 +106,25 @@
       "dishes": [
         {
           "id": 1,
-          "image": "./dishes1.jpg",
+          "image": "./dishes1.webp",
           "title": "SITRUSSPEKET LAKS",
           "category": "Middag"
         },
         {
           "id": 2,
-          "image": "./dishes2.jpg",
+          "image": "./dishes2.webp",
           "title": "PANNESTEKT KONGEKRABBE",
           "category": "Frokost"
         },
         {
           "id": 3,
-          "image": "./dishes3.jpg",
+          "image": "./dishes3.webp",
           "title": "MUSLING- OG REKESUPPE",
           "category": "Middag"
         },
         {
           "id": 4,
-          "image": "./dishes4.jpg",
+          "image": "./dishes4.webp",
           "title": "OVNSBAKTE REKER",
           "category": "Middag"
         }
@@ -132,25 +132,25 @@
       "team": [
         {
           "id": 1,
-          "image": "./team-member.png",
+          "image": "./team-member.webp",
           "name": "NAVN NAVNESEN",
           "designation": "Grunnlegger og Kjøkkensjef"
         },
         {
           "id": 2,
-          "image": "./team-member.png",
+          "image": "./team-member.webp",
           "name": "NAVN NAVNESEN",
           "designation": "Soussjef"
         },
         {
           "id": 3,
-          "image": "./team-member.png",
+          "image": "./team-member.webp",
           "name": "NAVN NAVNESEN",
           "designation": "Kokk"
         },
         {
           "id": 4,
-          "image": "./team-member.png",
+          "image": "./team-member.webp",
           "name": "NAVN NAVNESEN",
           "designation": "Kokk"
         }

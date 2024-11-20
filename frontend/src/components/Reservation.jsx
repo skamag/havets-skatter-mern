@@ -49,7 +49,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
         <div className="banner">
           <div className="bannerImageContainer">
             <div className="bannerImage">
-              <img src="reservationImage.png" alt="bannerImage" />
+              <img src="reservationImage.webp" alt="bannerImage" />
             </div>
           </div>
         </div>

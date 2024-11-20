@@ -80,12 +80,15 @@
   cursor: pointer;
 }
 .submit input:hover {
-  background-color: rgb(210, 210, 210);
+  background-color: #222;
+  color: white;
+  transition: ease-in-out 0.3s;
   /* background-color: rgb(202, 202, 202); */
   /* background-color: rgb(127, 92, 254); */
 }
 .submit input:active {
-  background-color: rgb(195, 195, 195);
+  background-color: #222;
+  color: white;
   /* background-color: rgb(156, 156, 156); */
   /* background-color: rgb(52, 25, 152); */
 }
