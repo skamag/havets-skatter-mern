@@ -141,8 +141,8 @@ const Reservation = ({ showMap, setShowMap, children }) => {
                         console.log(showMap)
                       }}
                       tabIndex={0}
-                      onKeyDown={setShowMap} // Allow toggle with Enter/Space
-                      role="button" // Accessibility role
+                      onKeyDown={setShowMap}
+                      role="button"
                     >
                       Bordkart
                     </span>

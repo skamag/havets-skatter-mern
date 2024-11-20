@@ -88,7 +88,6 @@ nav svg {
   nav {
     z-index: 20;
     position: unset;
-    background: #ffffff63;
     padding: 10px 30px;
   }
   nav::after {

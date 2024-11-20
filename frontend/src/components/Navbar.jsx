@@ -56,10 +56,10 @@ const Navbar = ({ setShowMenu }) => {
           className="hamburger"
           tabIndex={0}
           onClick={() => setShow(!show)}
-          onKeyDown={handleToggleMenu} // Allow toggle with Enter/Space
-          role="button" // Accessibility role
-          aria-label="Toggle navigation menu" // Accessibility label
-          aria-expanded={show} // Accessibility state
+          onKeyDown={handleToggleMenu}
+          role="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded={show}
         >
           <GiHamburgerMenu />
         </div>

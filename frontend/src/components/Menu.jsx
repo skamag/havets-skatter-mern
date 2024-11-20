@@ -35,7 +35,8 @@ const Menu = ({ showMenu, setShowMenu }) => {
           filteredMenu.map((filteredElement) => (
             <div className="card" key={filteredElement.id}>
               <div className="cardImageContainer">
-                <img src={"/about-1.jpg"} alt={filteredElement.title} />
+                <img src={"/menu-2.jfif"} alt={filteredElement.title} />
+                {/* <img src={"/menu-1.jpg"} alt={filteredElement.title} /> */}
               </div>
               <div className="cardTextContainer">
                 <div>
@@ -87,7 +88,7 @@ const Menu = ({ showMenu, setShowMenu }) => {
               <label htmlFor="search">Søk etter matvare:</label>
               <span>
                 <input
-                  name="search"
+                  id="search"
                   type="text"
                   value={menuInput}
                   onChange={(e) => setMenuInput(e.target.value)}
@@ -98,7 +99,7 @@ const Menu = ({ showMenu, setShowMenu }) => {
               <label htmlFor="sort">Sorter etter:</label>
               <span>
                 <select
-                  name="sort"
+                  id="sort"
                   value={sortOption}
                   onChange={(e) => setSortOption(e.target.value)}
                 >

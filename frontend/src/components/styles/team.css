@@ -40,8 +40,8 @@
   width: 175px;
   margin-bottom: 1rem;
 }
-.team .container .teamContainer .card h3 {
-  font-size: 1.5rem;
+.team .container .teamContainer .card h2 {
+  font-size: 1.25rem;
 }
 .team .container .teamContainer .card p {
   font-size: 18px;
