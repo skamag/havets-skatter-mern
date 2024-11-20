@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0.9;
 }
 .mapContainer .mapHeader {
   color: white;
@@ -37,7 +38,7 @@
   font-weight: lighter;
 }
 .mapContainer .map {
-  background-color: #ffffff;
+  /* background-color: rgba(255, 255, 255, 0.5); */
   width: fit-content;
   height: 90%;
   /* border-radius: 5px; */
@@ -107,7 +108,7 @@
     height: 100%;
     /* height: fit-content; */
     padding: 5% 5%;
-    align-items: center;
+    align-items: flex-end;
   }
   .mapSection {
     height: fit-content;

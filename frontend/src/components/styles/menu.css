@@ -17,6 +17,9 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   z-index: 101;
 } */
+.menuContainer .menuMain {
+  opacity: 0.9;
+}
 .menuContainer .menuHeader {
   color: white;
   display: flex;
@@ -57,7 +60,7 @@
   font-weight: lighter;
 }
 .menuContainer .menu {
-  background-color: white;
+  background-color: rgba(255, 255, 255);
   /* border-radius: 5px; */
   display: flex;
   flex-direction: column;
