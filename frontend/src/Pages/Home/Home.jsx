@@ -14,23 +14,25 @@ const Home = () => {
   const [showMap, setShowMap] = useState(false)
 
   return (
-    <main className="home">
+    <div className="home">
       <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
       <HeroSection setShowMenu={setShowMenu} />
 
       {!showMenu && (
         <>
-          <About />
-          <Dishes />
-          <Reservation showMap={showMap} setShowMap={setShowMap}>
-            <Map showMap={showMap} setShowMap={setShowMap} />
-          </Reservation>
-          <Team />
-          <Contact />
+          <main>
+            <About />
+            <Dishes />
+            <Reservation showMap={showMap} setShowMap={setShowMap}>
+              <Map showMap={showMap} setShowMap={setShowMap} />
+            </Reservation>
+            <Team />
+            <Contact />
+          </main>
           <Footer />
         </>
       )}
-    </main>
+    </div>
   )
 }
 
