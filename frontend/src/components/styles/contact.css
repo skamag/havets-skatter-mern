@@ -54,9 +54,6 @@
   resize: none;
   outline: none;
 }
-#contactForm input:focus {
-  outline: none;
-}
 .submit input {
   /* cursor: pointer;
   margin-left: auto;
