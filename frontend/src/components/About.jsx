@@ -10,7 +10,7 @@ const About = () => {
           <div className="banner">
             <div>
               <div className="top">
-                <p>Velkommen til Havets Skatter</p>
+                <p>Velkommen</p>
               </div>
               <p className="mid">
                 Havets Skatter er en eksklusiv sjømatrestaurant som tilbyr det
