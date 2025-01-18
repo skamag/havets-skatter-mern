@@ -1,5 +1,5 @@
 .mapContainer {
-  background-color: rgba(0, 0, 0, 0.75);
+  /* background-color: rgba(0, 0, 0, 0.75); */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12,9 +12,18 @@
   display: flex;
   justify-content: center;
   /* height: fit-content; */
-  /* opacity: 0; */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  /* transition: opacity 0.5s ease, transform 0.5s ease; */
   /* overflow-y: visible; */
+  transition: 0.5s;
+}
+.mapContainer-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.mapContainer-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 .mapSection {
   width: fit-content;
@@ -23,30 +32,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 .mapContainer .mapHeader {
-  color: white;
+  /* color: white; */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .mapContainer .mapX {
-  font-size: 40px;
+  font-size: 2rem;
   cursor: pointer;
-  color: white;
-  font-weight: lighter;
+  /* color: white; */
 }
 .mapContainer .map {
   /* background-color: rgba(255, 255, 255, 0.5); */
   width: fit-content;
   height: 90%;
-  /* border-radius: 5px; */
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
+  border: 1px solid black;
+  /* box-shadow: 2px 2px 4px black; */
 }
 .mapContainer .map img {
   height: 100%;

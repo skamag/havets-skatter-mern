@@ -172,7 +172,7 @@ const Reservation = ({ showMap, setShowMap, children }) => {
           </div>
         </div>
       </div>
-      {showMap && children}
+      {children}
     </section>
   )
 }

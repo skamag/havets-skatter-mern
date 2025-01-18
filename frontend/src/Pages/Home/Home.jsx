@@ -16,22 +16,25 @@ const Home = () => {
   return (
     <div className="home">
       <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
-      <HeroSection setShowMenu={setShowMenu} />
 
-      {!showMenu && (
-        <>
-          <main>
-            <About />
-            <Dishes />
-            <Reservation showMap={showMap} setShowMap={setShowMap}>
-              <Map showMap={showMap} setShowMap={setShowMap} />
-            </Reservation>
-            <Team />
-            <Contact />
-          </main>
-          <Footer />
-        </>
-      )}
+      {/* {!showMenu && (
+        <> */}
+      <div className={`${showMenu ? "hidden" : "visible"}`}>
+        <main>
+          <HeroSection setShowMenu={setShowMenu} />
+
+          <About />
+          <Dishes />
+          <Reservation showMap={showMap} setShowMap={setShowMap}>
+            <Map showMap={showMap} setShowMap={setShowMap} />
+          </Reservation>
+          <Team />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+      {/* </>
+      )} */}
     </div>
   )
 }

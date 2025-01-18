@@ -2,11 +2,15 @@ import "./styles/map.css"
 
 const Map = ({ showMap, setShowMap }) => {
   return (
-    <div className={`mapContainer ${showMap ? "showmap" : "hidemap"}`}>
+    <div
+      className={`mapContainer ${
+        showMap ? "mapContainer-visible" : "mapContainer-hidden"
+      }`}
+    >
       <div className="mapSection">
         <div className="mapHeader">
-          <h1 className="mapTitle">Velg bord</h1>
-          <h1
+          {/* <h1 className="mapTitle">Velg bord</h1> */}
+          <div
             onClick={() => setShowMap(false)}
             className="mapX"
             tabIndex={0}
@@ -18,7 +22,7 @@ const Map = ({ showMap, setShowMap }) => {
             }}
           >
             &#10006;
-          </h1>
+          </div>
         </div>
         <div className="map">
           {/* <div className="mapTables">
